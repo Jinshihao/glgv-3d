@@ -1,0 +1,93 @@
+.main-menu {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  font-family: 'Arial', sans-serif;
+}
+
+.menu-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(20, 20, 50, 0.92), rgba(8, 8, 16, 0.98));
+}
+
+.menu-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  width: 90%;
+}
+
+.menu-title {
+  font-size: 3.2rem;
+  margin: 0 0 0.2rem;
+  background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu-subtitle {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin: 0 0 2rem;
+}
+
+.profession-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profession-card {
+  width: 190px;
+  padding: 20px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.profession-card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.profession-emoji {
+  font-size: 2.8rem;
+}
+
+.profession-name {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.profession-desc {
+  font-size: 0.78rem;
+  color: #bbb;
+}
+
+.profession-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 0.72rem;
+  color: #999;
+}
+
+.menu-hint {
+  margin-top: 1.8rem;
+  color: #777;
+  font-size: 0.9rem;
+}
